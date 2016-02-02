@@ -33,7 +33,7 @@ public class TerrainGenerator : MonoBehaviour {
   void AddTerrainPoint(Vector3 point) {
 
     vertices.Add(new Vector3(point.x, 0f, 0f));
-    vertices.Add(new Vector3(point.x, point.y, 0f));
+    vertices.Add(point);
 
     if (vertices.Count >= 4) {
       int start = vertices.Count - 4;
